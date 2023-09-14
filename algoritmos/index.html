@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" class="css">
+	<link rel="shortcut icon" href="ifms.ico" type="image/x-icon">
+    <title>Pagina Inicial - IFMS Felipe</title>
+	<style>
+		.input-text{
+			color:black;
+		}
+		.progressbar{
+			width: 20px;
+		}
+	</style>
+</head>
+<body class="minhaclasse">
+    <h3>Tecnologia em Sistemas para Internet - <strong>IFMS</strong></h3>
+    <table border='0'> 
+    <tr>
+        <td>
+            <form method='get' action='algoritmos.php'>
+                <button type='submit' class='bt_select'>Algoritmos</button>
+            </form>
+        </td>
+        <td>
+            <form method='get' action='binario.php'>
+                <button type='submit' class='bt_select'>Logica Digital</button>
+            </form>
+        </td>
+        <td>
+            <form method='get' action='aula/'>
+                <button type='submit' class='bt_select'>Construção de <br> Pagina Web</button>
+            </form>
+        </td>
+    </tr>
+	<tr>
+	<td>
+            <form method='get' action='selic/'>
+                <button type='submit' class='bt_select'>Selic</button>
+            </form>
+    </td>
+	</tr>
+    </table>
+	<br>
+	<div>
+		<span id='test'></span>
+		<form method='POST' action='#'>
+			<h5>Busque por paginas</h5>
+			<input name='search' type='text' class='input-text'></input>
+		</form>
+	</div>
+	<link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+	<script src="js/jquery-ui/external/jquery/jquery.js"></script>
+	<script src="js/jquery-ui/jquery-ui.min.js"></script>
 
+	<!-- <input id='date' name='date' type='text' class='input-text'></input> <!-->
+	
+    <script>
+		$( "#date" ).datepicker();
+	</script>
+	
+	<script src='js/jquery-3.6.0.min.js'></script>
+	<script>
+	function TestedeAjax(id){
+		$.ajax({
+			url: 'hora.php',
+			type: 'POST',
+			data: {
+				id: id
+			},
+			success: function(response) {
+				console.log(response);
+			}
+		});	
+	}
+	window.setInterval(() => {
+            location.reload(); 
+    }, 1000 * 120);
+	
+	</script>
+</body>
+</html>
