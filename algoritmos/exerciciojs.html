@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="ifms.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" class="css">
+    <title>Algoritmos</title>
+</head>
+<body class='minhaclasse'>
+    <?php
+    echo "<h3 id='sys'> Data de Hoje: </h3>";
+    ?>
+    <h2>Tecnologia em Sistemas para Internet - <strong>IFMS</strong></h2>
+    <h3>Exercicios de JS - Algoritmos</h3>
+    <br>
+    <div> 
+        <span id='first'> </span>
+    </div>
+    <br>
+
+    <script>
+        let texto = 'Este é um Ola Mundo';
+        let tipo = typeof texto;
+        const div_texto = document.getElementById('first');
+        if ( tipo == 'string'){
+            div_texto.innerHTML = texto;
+        }else{
+            div_texto.innerHTML = 'Erro ao Escrever mensagem';
+        }
+    </script>
+
+<table class='table_voltar'>
+    <tr>
+        <form action="index.html" method="get">
+            <button class='bt_voltar' type='submit'>Voltar</button>
+        </form>
+    </tr>
+</table>
+<script src="js/script.js"></script>
+</body>
+</html>
