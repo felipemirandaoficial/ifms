@@ -8,11 +8,22 @@
     <title>Algoritmos</title>
 </head>
 <body class='minhaclasse'>
-    <?php
-    echo "<h3 id='sys'> Data de Hoje: </h3>";
-    ?>
+    
     <h2>Tecnologia em Sistemas para Internet - <strong>IFMS</strong></h2>
     <h3>Exercicios de JS - Algoritmos</h3>
+	<script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+	<script>
+		$(document).ready(function() {
+			 $.ajax({
+				 url: 'horas.php',
+				 type: 'POST',
+				 data: { code: '0001',quant: '1' },
+				 success: function(response) {
+					 console.log(response);
+				 }
+			 })
+		});
+	</script>
     <br>
     <div> 
         <span id='first'> </span>
