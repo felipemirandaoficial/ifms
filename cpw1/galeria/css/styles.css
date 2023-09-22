@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.inicio {
+  text-align: center;
+  padding: 35px;
+}
+
+.linha {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5px;
+}
+
+.linha * {
+	box-sizing: border-box;
+}
+#info{
+	display: solid;
+	text-align:center;
+}
+#down{
+	width: 80px;
+	height:80px;
+}
+.coluna {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 5px;
+}
+
+.coluna img {
+  width: 100%; 
+  margin-top: 8px;
+  filter: grayscale(100%);
+  transition: filter 0.7s;
+  vertical-align: middle;
+}
+
+.coluna img:hover{
+	
+	filter: grayscale(0%);
+	
+}
+
+@media only screen and (max-width: 1200px) {
+  .coluna {
+    flex: 33%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .coluna {
+    flex: 50%;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .coluna {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
