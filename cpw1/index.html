@@ -1,1 +1,47 @@
-
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../algoritmos/css/style.css" class="css">
+	<link rel="shortcut icon" href="../algoritmos/ifms.ico" type="image/x-icon">
+    <title>Pagina Inicial - IFMS Felipe</title>
+	<style>
+    body{
+        background-image: url('../algoritmos/img/Simasul.jpg');
+    }
+		.input-text{
+			color:black;
+		}
+		.progressbar{
+			width: 20px;
+		}
+	</style>
+</head>
+<body class="minhaclasse">
+    <h3>Tecnologia em Sistemas para Internet - <strong>IFMS</strong></h3>
+    <table border='0'> 
+    <tr>
+        <td>
+            <form method='get' action='galeria/'>
+                <button type='submit' class='bt_select'>Galeria CPW1</button>
+            </form>
+        </td>
+        <td>
+            <form method='get' action='#'>
+                <button type='submit' class='bt_select'>Em Breve</button>
+            </form>
+        </td>
+        
+    </tr>
+    </table>
+	<br>
+	<script src='js/jquery-3.6.0.min.js'></script>
+	<script>
+	window.setInterval(() => {
+            location.reload(); 
+    }, 1000 * 120);
+	
+	</script>
+</body>
+</html>
