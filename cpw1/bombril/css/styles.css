@@ -1,0 +1,53 @@
+@font-face {
+    font-family: BomBril;
+    src: url('../fonts/Caprasimo-Regular.ttf');
+}
+body{
+    background-color: black;
+}
+#div01{
+    background-color: yellow;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+
+
+#div02{
+    width: 400px;
+    height: 250px;
+    margin: auto;
+    padding: 15px;
+    background-color: red;
+    border-radius: 50%;
+    border: 8px solid white;
+    outline: 8px solid red;
+    box-sizing: border-box;
+}
+
+#div02 span{
+    font-family: BomBril;
+    text-align: center;
+    font-size: 82px;
+    text-shadow: 3px 5px black;
+    color:white
+}
+#bom{
+    margin: 50px;
+}
+
+#bril{
+    margin: 100px;
+    padding: 15px;
+}
+
+#divimg{
+    display: flex;
+}
+
+#brilho1{
+    width: 130px;
+    margin: -60px -15px;
+}
