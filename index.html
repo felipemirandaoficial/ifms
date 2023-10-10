@@ -32,7 +32,11 @@
                 <button type='submit' class='bt_select'>CPW</button>
             </form>
         </td>
-        
+         <td>
+            <form method='get' target='_blank' action='https://php-radio.vercel.app/api'>
+                <button type='submit' class='bt_select'>Projeto Radio</button>
+            </form>
+        </td>
     </tr>
     </table>
 	<br>
@@ -44,24 +48,10 @@
 		</form>
 	</div>
     <!-- <input id='date' name='date' type='text' class='input-text'></input> <!-->
-    <script>
-		$( "#date" ).datepicker();
-	</script>
+   
 	
-	<script src='js/jquery-3.6.0.min.js'></script>
+	
 	<script>
-	function TestedeAjax(id){
-		$.ajax({
-			url: 'hora.php',
-			type: 'POST',
-			data: {
-				id: id
-			},
-			success: function(response) {
-				console.log(response);
-			}
-		});	
-	}
 	window.setInterval(() => {
             location.reload(); 
     }, 1000 * 120);
